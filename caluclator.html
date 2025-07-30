@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator UI</title>
+  <style>
+    .calculator {
+      width: 220px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 50px auto;
+      background: #f8f8f8;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .calculator input[type="text"] {
+      width: 96%;
+      margin-bottom: 10px;
+      height: 30px;
+      text-align: right;
+      font-size: 18px;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      padding-right: 5px;
+    }
+
+    .calculator button {
+      width: 45px;
+      height: 45px;
+      margin: 2px;
+      font-size: 18px;
+      border: none;
+      background: #e0e0e0;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .calculator button:hover {
+      background: #d6d6d6;
+      transform: scale(1.05);
+    }
+
+    .calculator button.operator {
+      background: #fbc02d;
+      color: #000;
+    }
+
+    .calculator button.operator:hover {
+      background: #f9a825;
+      transform: scale(1.05);
+    }
+
+    .calculator button:active {
+      background: #bdbdbd;
+      transform: scale(0.97);
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" readonly>
+    <br>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button class="operator">/</button>
+    <br>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button class="operator">*</button>
+    <br>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button class="operator">-</button>
+    <br>
+    <button>0</button>
+    <button>.</button>
+    <button>C</button>
+    <button class="operator">+</button>
+    <br>
+    <button style="width:188px;margin-top:6px;">=</button>
+  </div>
+</body>
+</html>
